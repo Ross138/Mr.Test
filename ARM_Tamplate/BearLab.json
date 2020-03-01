@@ -1,6 +1,6 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.2",
+    "contentVersion": "1.0.0.3",
     "parameters": {
         "virtualMachines_backendSERVER_name": {
             "defaultValue": "backendSERVER",
@@ -40,22 +40,10 @@
         }
     },
     "variables": {
-         "virtualMachines_backendSERVER2_name": {
-            "Value": "backendSERVER2",
-            "type": "String"
-        },
-        "networkInterfaces_backendserver2889_name": {
-            "Value": "backendserver2889",
-            "type": "String"
-        },
-        "publicIPAddresses_backendSERVER2_ip_name": {
-            "Value": "backendSERVER2-ip",
-            "type": "String"
-        },
-         "networkSecurityGroups_backendSERVER2_nsg_name": {
-            "Value": "backendSERVER2-nsg",
-            "type": "String"
-        }
+         "virtualMachines_backendSERVER2_name": "backendSERVER2",
+        "networkInterfaces_backendserver2889_name": "backendserver2889",
+        "publicIPAddresses_backendSERVER2_ip_name": "backendSERVER2-ip",
+         "networkSecurityGroups_backendSERVER2_nsg_name": "backendSERVER2-nsg"
     },
     "resources": [
         {
